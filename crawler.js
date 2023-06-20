@@ -1,18 +1,18 @@
-const Crawler = require("crawler");
-const { chromium } = require("playwright");
-const ProgressBar = require("progress");
+const Crawler = require('crawler');
+const { chromium } = require('playwright');
+const ProgressBar = require('progress');
 
 const {
   generateProductJson,
   generateProductMd,
   generateProductPdf,
   trim,
-} = require("./fileHelper");
+} = require('./fileHelper');
 
 function crawProductListPage(config) {
   const { title, rateLimit, isProductListCsr } = config;
 
-  console.log(`---------->>>>> 开始${rateLimit ? "串行" : "并行"}爬取${title}`);
+  console.log(`---------->>>>> 开始${rateLimit ? '串行' : '并行'}爬取${title}`);
 
   if (isProductListCsr) {
     crawProductListPageCSR(config);
@@ -72,7 +72,7 @@ function crawProductListPageSSR(config) {
           }
         });
 
-        console.log("产品列表页爬取完毕");
+        console.log('产品列表页爬取完毕');
         generateProductJson(productList.info, config);
         crawProductDetail(productList.info, config);
       }
@@ -93,7 +93,7 @@ async function crawProductListPageCSR(config) {
   // generateProductJson(productList.info, config);
   crawProductDetail(productList.info, config);
 
-  console.log("产品详情页爬取完毕");
+  console.log('产品详情页爬取完毕');
 
   await page.close();
   await context.close();
@@ -105,7 +105,7 @@ function crawProductDetail(productList, config) {
   const { getProductDetailInfo, rateLimit, maxConnections, title } = config;
 
   const bar = new ProgressBar(
-    "【2】产品详情页 [:bar] :current :total :percent :etas",
+    '【2】产品详情页 [:bar] :current :total :percent :etas',
     {
       width: 50,
       total: productList.length,
@@ -150,8 +150,8 @@ function crawProductDetail(productList, config) {
   const crawler = new Crawler(crawlerConfig);
 
   crawler.queue(productList.map((ele) => ele.link));
-  crawler.on("drain", () => {
-    console.log("产品详情页爬取完毕");
+  crawler.on('drain', () => {
+    console.log('产品详情页爬取完毕');
 
     generateProductJson(productList, config);
     generateProductMd(productList, config);

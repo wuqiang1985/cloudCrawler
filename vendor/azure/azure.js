@@ -1,17 +1,17 @@
-const { crawProductListPage } = require("../../crawler");
+const { crawProductListPage } = require('../../crawler');
 
 const config = {
-  productListUrl: "https://azure.microsoft.com/zh-cn/products/",
-  productSelector: ".text-heading5",
-  fileName: "azure_cloud",
-  title: "微软云",
+  productListUrl: 'https://azure.microsoft.com/zh-cn/products/',
+  productSelector: '.text-heading5',
+  fileName: 'azure_cloud',
+  title: '微软云',
   maxConnections: 20,
   isThridCategory: false,
   getProductListInfo: function ($, el) {
     const getParentCategory = (ele) => {
       let preElement = ele.prev();
       while (preElement) {
-        if (preElement.hasClass("column")) {
+        if (preElement.hasClass('column')) {
           return preElement;
         } else {
           preElement = preElement.prev();
@@ -23,7 +23,7 @@ const config = {
       let count = 0;
       let nextElement = ele.next();
       while (nextElement && nextElement.length) {
-        if (!nextElement.hasClass("column")) {
+        if (!nextElement.hasClass('column')) {
           count += nextElement.children().length;
           nextElement = nextElement.next();
         } else {
@@ -42,14 +42,14 @@ const config = {
     const productInfo = {};
     productInfo.name = productElem.text();
     productInfo.desc = descElem.text();
-    productInfo.link = `https://azure.microsoft.com${linkElem.attr("href")}`;
-    productInfo.firstCategory = firstCategory.find(".product-category").text();
+    productInfo.link = `https://azure.microsoft.com${linkElem.attr('href')}`;
+    productInfo.firstCategory = firstCategory.find('.product-category').text();
     productInfo.firstCategoryCount = getCategoryProductCount(firstCategory);
 
     return productInfo;
   },
   getProductDetailInfo: function ($, productInfo) {
-    productInfo.desc_info = $("#overview div[data-oc-token-text]").text();
+    productInfo.desc_info = $('#overview div[data-oc-token-text]').text();
     // const match = productInfo.desc_info.match(/（.*?）/);
     // if (match) {
     //   var fullName = match[0].replace("（", "").replace("）", "");

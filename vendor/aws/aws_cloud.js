@@ -1,22 +1,22 @@
-const { crawProductListPage, trim } = require("../../crawler");
+const { crawProductListPage, trim } = require('../../crawler');
 
 const config = {
-  productListUrl: "https://aws.amazon.com/cn/",
+  productListUrl: 'https://aws.amazon.com/cn/',
   productSelector:
-    "#m-nav-panel-products .m-nav-col-1 .m-nav-panel-link:not(.m-nav-txt-large)",
-  fileName: "aws_cloud",
-  title: "亚马逊云",
+    '#m-nav-panel-products .m-nav-col-1 .m-nav-panel-link:not(.m-nav-txt-large)',
+  fileName: 'aws_cloud',
+  title: '亚马逊云',
   maxConnections: 20,
-  excludeCategory: ["特色服务"],
+  excludeCategory: ['特色服务'],
   isThridCategory: false,
   isProductListCsr: true,
   getProductListInfo: async function (page) {
     const productList = { info: [] };
-    const excludeCategory = ["特色服务"];
+    const excludeCategory = ['特色服务'];
 
     const products = await page
       .locator(
-        "#m-nav-panel-products .m-nav-col-1 .m-nav-panel-link:not(.m-nav-txt-large):not(.m-nav-txt-xlarge) > a"
+        '#m-nav-panel-products .m-nav-col-1 .m-nav-panel-link:not(.m-nav-txt-large):not(.m-nav-txt-xlarge) > a'
       )
       .all();
     let i = 0;
@@ -25,21 +25,21 @@ const config = {
       const productInfo = {};
 
       const linkElem = product;
-      const firstCategory = product.locator("../..");
+      const firstCategory = product.locator('../..');
 
       const nameDescription = await linkElem.innerHTML();
-      let [name, description] = nameDescription.split("<span>");
-      description = description.replace("</span>", "");
+      let [name, description] = nameDescription.split('<span>');
+      description = description.replace('</span>', '');
 
       productInfo.name = name;
       productInfo.desc = description;
-      productInfo.link = await linkElem.getAttribute("href");
+      productInfo.link = await linkElem.getAttribute('href');
       productInfo.firstCategory = await firstCategory
-        .locator(".m-nav-panel-link")
+        .locator('.m-nav-panel-link')
         .first()
         .textContent();
       productInfo.firstCategoryCount =
-        (await firstCategory.locator(".m-nav-panel-link").count()) - 1;
+        (await firstCategory.locator('.m-nav-panel-link').count()) - 1;
 
       if (i === 0) {
         productInfo.needFirstCategory = true;
@@ -65,8 +65,8 @@ const config = {
   },
   getProductDetailInfo: function ($, productInfo) {
     productInfo.desc_info =
-      $(".lb-row h3.lb-txt-white").text() ||
-      $(".lb-row h1.lb-txt-white").text();
+      $('.lb-row h3.lb-txt-white').text() ||
+      $('.lb-row h1.lb-txt-white').text();
     // const match = productInfo.desc_info.match(/（.*?）/);
     // if (match) {
     //   var fullName = match[0].replace("（", "").replace("）", "");

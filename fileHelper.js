@@ -1,9 +1,9 @@
-const fs = require("fs-extra");
-const prettyMdPdf = require("pretty-markdown-pdf");
+const fs = require('fs-extra');
+const prettyMdPdf = require('pretty-markdown-pdf');
 
 function generateProductJson(productList, config) {
   fs.outputJsonSync(
-    `output/${config.fileName.split("_")[0]}/${config.fileName}_original.json`,
+    `output/${config.fileName.split('_')[0]}/${config.fileName}_original.json`,
     productList
   );
   generateHandledProductJson(productList, config);
@@ -35,7 +35,7 @@ function generateHandledProductJson(productList, config) {
   };
 
   fs.outputJsonSync(
-    `output/${config.fileName.split("_")[0]}/${config.fileName}.json`,
+    `output/${config.fileName.split('_')[0]}/${config.fileName}.json`,
     products
   );
 }
@@ -44,9 +44,9 @@ function generateProductMd(productList, config) {
   const { fileName, title, isThridCategory } = config;
 
   const stream = fs.createWriteStream(
-    `output/${fileName.split("_")[0]}/${fileName}.md`,
+    `output/${fileName.split('_')[0]}/${fileName}.md`,
     {
-      flags: "w",
+      flags: 'w',
       autoClose: true,
     }
   );
@@ -55,9 +55,9 @@ function generateProductMd(productList, config) {
   };
 
   writeLine(`# ${title}产品列表`);
-  writeLine("");
+  writeLine('');
   writeLine(`\`本文档生成于：${new Date().toLocaleDateString()} @qiangwu\``);
-  writeLine("");
+  writeLine('');
   writeLine(
     `\`${title}一共包含${
       productList.filter((product) => product.needFirstCategory).length
@@ -67,7 +67,7 @@ function generateProductMd(productList, config) {
   for (let index = 0; index < productList.length; index++) {
     let product = productList[index];
     if (product.needFirstCategory) {
-      writeLine("");
+      writeLine('');
       writeLine(
         `## ${trim(product.firstCategory)}(${product.firstCategoryCount})`
       );
@@ -99,26 +99,26 @@ function generateProductMd(productList, config) {
     );
   }
 
-  console.log("【3】markdown已完成");
+  console.log('【3】markdown已完成');
 }
 
 async function generateProductPdf(config) {
   await prettyMdPdf.convertMd({ markdownFilePath: `${config.fileName}.md` });
-  console.log("PDF已完成");
+  console.log('PDF已完成');
 }
 
 function trim(str) {
-  return str?.replace(/^\s+|\s+$|[\n]/g, "");
+  return str?.replace(/^\s+|\s+$|[\n]/g, '');
 }
 
 function setTableHeader(writeLine) {
-  writeLine("|  产品   |  英文名  | 英文简称 | 概述  | 详情 |");
-  writeLine("|  ----  | ----  | ----  | ----  |  ----  |");
+  writeLine('|  产品   |  英文名  | 英文简称 | 概述  | 详情 |');
+  writeLine('|  ----  | ----  | ----  | ----  |  ----  |');
 }
 
 function generatesummaryMd(fileName, cloundInfo) {
   const stream = fs.createWriteStream(`${fileName}`, {
-    flags: "w",
+    flags: 'w',
     autoClose: true,
   });
   const writeLine = (content) => {
@@ -126,17 +126,17 @@ function generatesummaryMd(fileName, cloundInfo) {
   };
 
   writeLine(`# 云厂商产品 Overview`);
-  writeLine("");
+  writeLine('');
   writeLine(`\`本文档生成于：${new Date().toLocaleDateString()} @qiangwu\``);
-  writeLine("");
-  writeLine("|  云厂商   |  产品分类（个）  | 产品（个） | 分类详情  |");
-  writeLine("|  ----  | ----  | ----  | ----  |");
+  writeLine('');
+  writeLine('|  云厂商   |  产品分类（个）  | 产品（个） | 分类详情  |');
+  writeLine('|  ----  | ----  | ----  | ----  |');
 
   for (let info of Object.values(cloundInfo)) {
     writeLine(
       `| ${info.name} | ${info.categoryCount} | ${
         info.productCount
-      } | ${info.categoryList.join("<br>")} |`
+      } | ${info.categoryList.join('<br>')} |`
     );
   }
 }

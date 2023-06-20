@@ -1,12 +1,12 @@
-const { crawProductListPage } = require("../../crawler");
+const { crawProductListPage } = require('../../crawler');
 
 const config = {
-  productListUrl: "https://cloud.google.com/products?hl=zh-cn",
-  productSelector: ".cws-headline",
-  fileName: "gcp_cloud",
-  title: "谷歌云",
+  productListUrl: 'https://cloud.google.com/products?hl=zh-cn',
+  productSelector: '.cws-headline',
+  fileName: 'gcp_cloud',
+  title: '谷歌云',
   maxConnections: 20,
-  excludeCategory: ["精选产品"],
+  excludeCategory: ['精选产品'],
   isThridCategory: false,
   getProductListInfo: function ($, el) {
     const productElem = $(el);
@@ -17,16 +17,16 @@ const config = {
     const productInfo = {};
     productInfo.name = productElem.text();
     productInfo.desc = descElem.text();
-    productInfo.link = linkElem.attr("href");
+    productInfo.link = linkElem.attr('href');
     productInfo.firstCategory = firstCategory
-      .find(".cws-content-block__headline")
+      .find('.cws-content-block__headline')
       .text();
-    productInfo.firstCategoryCount = firstCategory.find(".cws-headline").length;
+    productInfo.firstCategoryCount = firstCategory.find('.cws-headline').length;
 
     return productInfo;
   },
   getProductDetailInfo: function ($, productInfo) {
-    productInfo.desc_info = $("div.cws-body--large.richtext").text();
+    productInfo.desc_info = $('div.cws-body--large.richtext').text();
     // const match = productInfo.desc_info.match(/（.*?）/);
     // if (match) {
     //   var fullName = match[0].replace("（", "").replace("）", "");
