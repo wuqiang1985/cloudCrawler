@@ -1,12 +1,10 @@
-const { crawProductListPage } = require('../../crawler');
-
 const config = {
   productListUrl: 'https://azure.microsoft.com/zh-cn/products/',
   productSelector: '.text-heading5',
   fileName: 'azure_cloud',
   title: '微软云',
   maxConnections: 20,
-  isThridCategory: false,
+  isThirdCategory: false,
   getProductListInfo: function ($, el) {
     const getParentCategory = (ele) => {
       let preElement = ele.prev();
@@ -63,4 +61,4 @@ const config = {
   },
 };
 
-crawProductListPage(config);
+module.exports = config;

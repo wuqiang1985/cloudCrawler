@@ -1,12 +1,10 @@
-const { crawProductListPage } = require('../../crawler');
-
 const config = {
   productListUrl: 'https://www.huaweicloud.com/product/',
   productSelector: '.card-title-text',
   fileName: 'huawei_cloud',
   title: '华为云国内站',
   maxConnections: 20,
-  isThridCategory: true,
+  isThirdCategory: true,
   excludeCategory: ['精选推荐'],
   getProductListInfo: function ($, el) {
     const productElem = $(el);
@@ -57,4 +55,4 @@ const config = {
   },
 };
 
-crawProductListPage(config);
+module.exports = config;

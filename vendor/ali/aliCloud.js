@@ -1,12 +1,10 @@
-const { crawProductListPage } = require('../../crawler');
-
 const config = {
   productListUrl: 'https://www.aliyun.com/product/list',
   productSelector: '.sitem-title',
   fileName: 'ali_cloud',
   title: '阿里云国内站',
   maxConnections: 20,
-  isThridCategory: true,
+  isThirdCategory: true,
   isProductListCsr: true,
   getProductListInfo: async function (page) {
     const productList = { info: [] };
@@ -74,4 +72,4 @@ const config = {
   },
 };
 
-crawProductListPage(config);
+module.exports = config;

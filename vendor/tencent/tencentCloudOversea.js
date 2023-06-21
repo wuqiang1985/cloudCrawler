@@ -1,5 +1,3 @@
-const { crawProductListPage } = require('../../crawler');
-
 const config = {
   productListUrl: 'https://www.tencentcloud.com/zh/product',
   productSelector: '.v3-product-menu-card-cell-tit',
@@ -7,7 +5,7 @@ const config = {
   title: '腾讯云国际站',
   rateLimit: 500,
   // maxConnections: 20,
-  isThridCategory: true,
+  isThirdCategory: true,
   getProductListInfo: function ($, el) {
     const productElem = $(el);
     const descElem = productElem.next();
@@ -59,4 +57,4 @@ const config = {
   },
 };
 
-crawProductListPage(config);
+module.exports = config;

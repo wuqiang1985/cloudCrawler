@@ -1,4 +1,4 @@
-const { crawProductListPage, trim } = require('../../crawler');
+const { trim } = require('../../fileHelper');
 
 const config = {
   productListUrl: 'https://aws.amazon.com/cn/',
@@ -8,7 +8,7 @@ const config = {
   title: '亚马逊云',
   maxConnections: 20,
   excludeCategory: ['特色服务'],
-  isThridCategory: false,
+  isThirdCategory: false,
   isProductListCsr: true,
   getProductListInfo: async function (page) {
     const productList = { info: [] };
@@ -79,4 +79,4 @@ const config = {
   },
 };
 
-crawProductListPage(config);
+module.exports = config;

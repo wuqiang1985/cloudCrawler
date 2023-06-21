@@ -1,7 +1,7 @@
 
 # 腾讯云国内站产品列表
 
-`本文档生成于：2023/6/15 @qiangwu`
+`本文档生成于：2023/6/21 @qiangwu`
 
 `腾讯云国内站一共包含16个大类，457款产品，详情如下`
 
@@ -73,7 +73,7 @@
 |  ----  | ----  | ----  | ----  |  ----  |
 |  [API 网关](https://cloud.tencent.com/product/apigw)  | API Gateway  |  | API 全生命周期托管服务   | 腾讯云 API 网关（API Gateway）是腾讯云推出的一种 API 托管服务，能提供 API 的完整生命周期管理，包括创建、维护、发布、运行、下线等。  |
 |  [服务网格](https://cloud.tencent.com/product/tcm)  | Tencent Cloud Mesh, TCM  |  | 一致、可靠、无侵入的服务发现、流量管控和端到端可观测的应用通信网络   | 服务网格（Tencent Cloud Mesh, TCM），一致、可靠、透明的云原生应用通信网络管控基础平台。全面兼容 Istio，集成腾讯云基础设施，提供全托管服务化的支撑能力保障网格生命周期管理。IaaS 组网与监控组件开箱即用，跨集群、异构应用一致发现管理加速云原生迁移。  |
-|  [微服务引擎 TSE](https://cloud.tencent.com/product/tse)  | Tencent Cloud Service Engine  |  | 高效、稳定、无缝迁移的注册中心、配置中心托管服务，满足您快速实现微服务架构转型。   | 微服务引擎（Tencent Cloud Service Engine）提供开箱即用的云上全场景微服务解决方案。支持开源增强的云原生注册配置中心（Zookeeper、Nacos、Consul 和 Apollo），北极星网格（腾讯自研并开源的 PolarisMesh）、云原生 API 网关（Nginx Ingress、Kong）以及微服务应用托管的弹性微服务平台。微服务引擎完全兼容开源版本的使用方式，在功能、可用性和可运维性等多个方面进行增强，助力用户快速构建微服务架构。  |
+|  [微服务引擎 TSE](https://cloud.tencent.com/product/tse)  | Tencent Cloud Service Engine  |  | 高效、稳定、无缝迁移的注册中心、配置中心托管服务，满足您快速实现微服务架构转型。   | 微服务引擎（Tencent Cloud Service Engine）提供开箱即用的云上全场景微服务解决方案。支持开源增强的云原生注册配置中心（Zookeeper、Nacos 和 Apollo），北极星网格（腾讯自研并开源的 PolarisMesh）、云原生 API 网关（Kong）以及微服务应用托管的弹性微服务平台。微服务引擎完全兼容开源版本的使用方式，在功能、可用性和可运维性等多个方面进行增强。  |
 |  [云原生 API 网关new](https://cloud.tencent.com/product/cngw)  | Cloud Native Gateway  |  | 微服务引擎 TSE 的云原生网关组件提供 Kong 等开源网关的云上托管服务，提供基于微服务体系的可插拔的网关功能。   | 云原生 API 网关（Cloud Native Gateway）是腾讯云基于开源微服务网关推出的一款高性能高可用的云上网关托管产品，减少用户自建网关的开发及运维成本。云原生 API 网关作为云上微服务架构的流量入口，集成请求分发、API 管理、流量监控、访问限制等功能，是微服务架构中的重要组件。  |
 |  [注册配置中心](https://cloud.tencent.com/product/rcc)  | Zookeeper、Nacos 和 Apollo  |  | TSE 注册配置中心提供多款主流的云原生注册配置中心（Zookeeper、Nacos、Consul、Eureka 和Apollo），提供微服务与分布式场景下，云原生应用的动态服务发现、分布式配置管理和   | TSE 注册配置中心提供多款主流的云原生注册配置中心（Zookeeper、Nacos 和 Apollo），提供微服务与分布式场景下，云原生应用的动态服务发现、分布式配置管理和服务管理等能力。无改造、无缝平滑迁移、多语言接入等特性，助力业务轻松快速上云。  |
 |  [北极星网格](https://cloud.tencent.com/product/polarismesh)  | undefined  | undefined | TSE 北极星网格 PolarisMesh 是腾讯开源的注册中心、配置中心和治理中心，致力于解决分布式或者微服务架构中的服务可见、故障容错、流量控制和安全问题。   | TSE 北极星网格 PolarisMesh 是腾讯开源的注册中心、配置中心和治理中心，致力于解决分布式或者微服务架构中的服务可见、故障容错、流量控制和安全问题。北极星在腾讯内部的服务注册数量超过百万，日接口调用量超过十万亿，通用性和稳定性都得到了大规模的验证。  |
@@ -406,8 +406,8 @@
 |  [DDoS 防护](https://cloud.tencent.com/product/ddos)  | Anti-DDoS  |  | 拥有可信赖的 DDoS 防护体系，可为不同行业提供多种安全解决方案   | DDoS 防护（Anti-DDoS）具有全面、高效、专业的 DDoS 防护能力，为企业组织提供 DDoS 高防包、DDoS 高防 IP 等多种 DDoS 解决方案，应对 DDoS 攻击问题。通过充足、优质的 DDoS 防护资源，结合持续进化的“自研+AI 智能识别”清洗算法，保障用户业务的稳定、安全运行。防护场景覆盖游戏、互联网、视频、金融、政府等行业。  |
 |  [边缘安全加速平台](https://cloud.tencent.com/product/teo)  | undefined  | undefined | 面向海外市场提供边缘一体化服务，聚焦流媒体与游戏、电商与零售、金融服务、科技企业与内容资讯等行业，提供 4/7 层安全防护及分发加速服务。   | undefined  |
 
-## 大数据(19)
-### 数据分析(10)
+## 大数据(18)
+### 数据分析(9)
 |  产品   |  英文名  | 英文简称 | 概述  | 详情 |
 |  ----  | ----  | ----  | ----  |  ----  |
 |  [弹性 MapReduce](https://cloud.tencent.com/product/emr)  | undefined  | undefined | 可靠、安全、灵活的云端托管Hadoop服务   | 弹性 MapReduce (EMR) 是基云原生技术和泛 Hadoop 生态开源技术的安全、低成本、高可靠的开源大数据平台。提供易于部署及管理的 Hive、Spark、HBase、Flink、StarRocks、Iceberg、Alluxio 等开源大数据组件，帮助客户高效构建云端企业级数据湖技术架构。  |
@@ -419,7 +419,6 @@
 |  [流计算 Oceanus](https://cloud.tencent.com/product/oceanus)  | undefined  | undefined | 云端的流式数据汇聚、计算服务，满足您实时处理数据的需求   | 流计算 Oceanus 是大数据产品生态体系的实时化分析利器，是基于 Apache Flink 构建的企业级实时大数据分析平台，具备一站开发、无缝连接、亚秒延时、低廉成本、安全稳定等特点。流计算 Oceanus 以实现企业数据价值最大化为目标，加速企业实时化数字化的建设进程。  |
 |  [数据湖分析](https://cloud.tencent.com/product/dla-overview)  | undefined  | undefined | 云端数据湖构建与分析服务，覆盖数据湖构建、元数据管理、分析计算等数据湖全链路技术架构。   | 腾讯云数据湖分析依托于腾讯云原生技术，提供云端数据湖构建与分析服务，覆盖数据入湖构建、元数据管理、湖数据敏捷分析等全链路能力。借助腾讯云数据湖技术架构，打破数据孤岛，提升数据敏捷度，减少数据成本，帮助企业更快、更灵活、更智能的探索数据价值。  |
 |  [数据湖计算 DLC](https://cloud.tencent.com/product/dlc)  | Data Lake Compute  | DLC | 敏捷高效的数据湖分析服务，简单快速的开始云端数据联合分析。   | 数据湖计算DLC（Data Lake Compute，DLC）提供了敏捷高效的数据湖分析与计算服务。服务采用无服务器架构（Serverless），开箱即用。使用标准SQL语法即可完成数据处理、多源数据联合计算等数据工作，有效降低用户数据分析服务搭建成本及使用成本，提高企业数据敏捷度。  |
-|  [数据编排平台new](https://cloud.tencent.com/product/dop)  | Data Orchestration Platform  | DOP | 基于开源 Alluxio 的增强数据编排平台服务，专注于大数据领域，可以轻松实现对多个底层存储系统做统一的数据编排。   | 数据编排平台（Data Orchestration Platform，DOP），是腾讯推出的数据编排平台服务。定位通用数据编排，与腾讯大数据生态紧密结合。可以充分利用硬件剩余资源，与计算配合，为用户提供计算加速、数据转换、数据无感迁移、统一存储服务、智能数据路由等能力，加速机器学习和人工智能等 AI 业务访问存储等能力。  |
 ### 数据开发与治理(3)
 |  产品   |  英文名  | 英文简称 | 概述  | 详情 |
 |  ----  | ----  | ----  | ----  |  ----  |
@@ -453,7 +452,7 @@
 |  [人脸试妆](https://cloud.tencent.com/product/fmu)  | FaceMakeup  |  | 自然、精准、高效的人脸试妆服务，解决互动娱乐场景的形象美化需求   | 人脸试妆（FaceMakeup）基于腾讯优图精准的 AI 能力，提供包括人脸美颜、试唇色、图片滤镜等多种功能。支持在线试妆、视频拍摄实时图像后处理场景，为开发者和企业打造高可用的试妆美颜效果。适用于直播短视频、视频通信、美颜相机等场景。  |
 |  [AI 绘画](https://cloud.tencent.com/product/aiart)  | AI Art  |  | AI绘画（AI Art）提供智能图像生成及编辑的技术服务，输入一张图片或一段描述文本后，将智能生成与输入内容相关的图片，支持多样化的图片风格选择。   | AI 绘画（AI Art）是一款 AI 图像生成与编辑技术 API 服务，可以结合输入的文本或图片智能创作出与输入相关的图像内容，具有更强大的中文理解能力、更多样化的风格选择，更好支持中文场景下的建筑风景生成、古诗词理解、水墨剪纸等中国元素风格生成，以及各种动漫、游戏风格的高精度图像生成和风格转换，为高质量的内容创作、内容运营提供技术支持。  |
 |  [人像分割](https://cloud.tencent.com/product/segmentportrait)  | Segment Portrait  |  | 识别图片中人体的完整轮廓，与背景进行分割，返回灰度图和前景人像图；可应用于照片合成等场景。   | 人像分割（Segment Portrait）基于腾讯云人像分割算法，提供二分类人像分割、自定义人像分割、视频人像分割等服务，支持识别图片或视频中的人体轮廓，并将人像与背景进行分离，实现精细化抠图的效果，可以用于照片合成、在线会议、视频直播、游戏影视等多个场景。  |
-|  [语音识别](https://cloud.tencent.com/product/asr)  | Automatic Speech Recognition  | ASR | 全面开放腾讯语音识别技术，为开发者提供语音转文字服务的最佳体验   | 腾讯云语音识别（Automatic Speech Recognition，ASR）是将语音转化成文字的PaaS产品，为企业提供精准而极具性价比的识别服务。被微信、王者荣耀、腾讯视频等大量业务使用，适用于录音质检、会议实时转写、语音输入法等多个场景。  |
+|  [语音识别](https://cloud.tencent.com/product/asr)  | Automatic Speech Recognition  | ASR | 全面开放腾讯语音识别技术，为开发者提供语音转文字服务的最佳体验   | 腾讯云语音识别（Automatic Speech Recognition，ASR）是将语音转化成文字的PaaS产品，为企业提供精准而极具性价比的识别服务。被微信、王者荣耀、腾讯视频等大量业务使用，适用于录音质检、会议实时转写、语音输入法等多个场景。即将全新上线语音识别+（ASR+）系列产品。  |
 |  [语音合成](https://cloud.tencent.com/product/tts)  | Text To Speech  | TTS | 高拟真度、灵活配置的语音合成产品，打通人机交互的闭环，让应用逼真发声   | 语音合成（Text To Speech，TTS）满足将文本转化成拟人化语音的需求，打通人机交互闭环。提供多场景、多语言的音色选择，支持 SSML 标记语言，支持自定义音量、语速等参数，让发音更专业、更符合场景需求。语音合成广泛适用于智能客服、有声阅读、新闻播报、人机交互等业务场景。  |
 |  [声音工坊](https://cloud.tencent.com/product/ttsw)  | Text To Speech Workshop,TTSW  |  | 提供定制TTS的能力，满足客户定制化需求。通过先进的深度学习技术，根据客户实际业务情况，提供不同的定制方案，从而更有效、更专业地服务实际业务需求。   | 声音工坊（Text To Speech Workshop,TTSW）提供声音定制、声音复刻、音色变换等前沿语音能力，通过先进的深度学习技术，根据客户实际业务场景，提供针对性的语音技术产品，从而更有效、更专业地服务实际业务需求。普遍适用于智能客服、有声阅读、新闻播报、虚拟人、电商直播、短视频制作等场景。  |
 |  [NLP 服务](https://cloud.tencent.com/product/nlp)  | Natural Language Process  | NLP | 开箱即用的 NLP 能力，满足各种文本智能需求   | NLP 服务（Natural Language Process，NLP）深度整合了腾讯内部的 NLP 技术，提供多项智能文本处理和文本生成能力，包括词法分析、相似词召回、词相似度、句子相似度、文本润色、句子纠错、文本补全、句子生成等。满足各行业的文本智能需求。  |
@@ -477,7 +476,7 @@
 |  [腾讯云小微智能增长套件](https://cloud.tencent.com/product/cxwsgk)  | Cloud XiaoWei Smart Growth Kit  |  | 通过一站式服务，帮助企业走出数据分析难、数据洞察难、实验优化难的困境，加速企业营销数字化转型升级，赋能企业用户增长。   | 腾讯云小微智能增长套件（Cloud XiaoWei Smart Growth Kit），主打数据采集、增长分析、智能洞察及实验优化能力。通过一站式服务，帮助企业走出分析难、洞察难、实验难的困境，加速企业营销数字化转型升级，赋能企业用户增长。  |
 |  [搜狗输入法企业版](https://cloud.tencent.com/product/sgim)  | Sogou Input Method For Business  |  | 腾讯搜狗输入法企业版产品，为企业客户提供安全可靠、专属定制的输入解决方案。   | 搜狗输入法企业版（Sogou Input Method For Business），为企业客户提供安全可靠、专属定制的输入解决方案，提供键盘输入、手写识别、AI语音识别等多种输入方式，支持词库定制、皮肤定制、生僻字输入、多语言输入、私有化部署等多种定制化需求，满足金融、能源、通信、教育等行业的网点服务和办公需求。  |
 
-## 开发与运维(46)
+## 开发与运维(47)
 ### 低代码(5)
 |  产品   |  英文名  | 英文简称 | 概述  | 详情 |
 |  ----  | ----  | ----  | ----  |  ----  |
@@ -510,13 +509,13 @@
 |  [持续集成](https://cloud.tencent.com/product/coding-ci)  | CODING Continuous Integration  | CODING-CI | 云端代码构建服务，全面兼容 Jenkins ，支持 Docker 构建   | CODING 持续集成简介CODING 持续集成（CODING Continuous Integration，CODING-CI）全面兼容 Jenkins 的持续集成服务，支持 Java、Python、NodeJS 等所有主流语言，并且支持 Docker 镜像的构建。图形化编排，高配集群多 Job 并行构建全面提速您的构建任务。支持主流的 Git 代码仓库，包括 CODING 代码托管、GitHub、GitLab 等。  |
 |  [制品库](https://cloud.tencent.com/product/coding-ar)  | CODING Artifact Repositories  | CODING-AR | 代码编译后的制品管理服务，支持云端构建和本地构建推送、快速索引存档构建物、版本控制   | CODING 制品库（CODING Artifact Repositories，CODING-AR）用以管理源代码编译后的构建产物，支持 Docker、Maven、Helm、Npm 包等常见制品库类型，制品库可以跟源代码协同进行版本化控制，可以与本地各构建工具和云上的持续集成，持续部署无缝结合，并支持漏洞扫描等特性。为研发团队提供优质高效的构建物管理服务，把控构建物质量。  |
 |  [持续部署](https://cloud.tencent.com/product/coding-cd)  | CODING Continuous Deployment  | CODING-CD | 持续、可控、自动化地把各种类型的软件制品包（Docker 镜像、War 等）发布到服务集群中   | CODING 持续部署（CODING Continuous Deployment，CODING-CD）用以管理软件在经过构建之后的发布和部署交付过程，可以无缝对接上游 Git 仓库、制品仓库实现全自动化部署，同时支持 Webhook 等外部对接能力，方便集成各种开发、运维工具。在配以合适的技术架构、运维工具的基础上，可以方便地实现蓝绿发布、灰度发布（金丝雀发布）、滚动发布、快速回滚等功能。  |
-|  [效能洞察new](https://cloud.tencent.com/product/coding-insight)  | CODING Insight  |  | 度量分析各领域效能数据，帮助管理者洞察研效进展与问题，持续改进团队效能。   | CODING 效能洞察（CODING Insight）是一款专注于研发效能的度量平台，通过专业的度量方法对 DevOps 全流程领域的研发效能数据进行可视化、场景化呈现，帮助管理者、研发人员、项目经理和研效专家等各类角色分析、理解和洞察整体效能情况，持续完成效能改进。  |
-|  [腾讯云小程序平台new](https://cloud.tencent.com/product/tcmpp)  | undefined  | undefined | 一站式开发，将小程序投放到企业自有APP   | 腾讯云小程序平台，源于腾讯小程序技术框架，完全遵循微信小程序的开发规范与标准。不仅可以帮助企业实现将小程序投放到自有 App，同时可以为企业提供自建小程序生态的闭环能力。  |
+|  [效能洞察](https://cloud.tencent.com/product/coding-insight)  | CODING Insight  |  | 度量分析各领域效能数据，帮助管理者洞察研效进展与问题，持续改进团队效能。   | CODING 效能洞察（CODING Insight）是一款专注于研发效能的度量平台，通过专业的度量方法对 DevOps 全流程领域的研发效能数据进行可视化、场景化呈现，帮助管理者、研发人员、项目经理和研效专家等各类角色分析、理解和洞察整体效能情况，持续完成效能改进。  |
+|  [腾讯云小程序平台](https://cloud.tencent.com/product/tcmpp)  | undefined  | undefined | 一站式开发，将小程序投放到企业自有APP   | 腾讯云小程序平台，源于腾讯小程序技术框架，完全遵循微信小程序的开发规范与标准。不仅可以帮助企业实现将小程序投放到自有 App，同时可以为企业提供自建小程序生态的闭环能力。  |
 |  [腾讯云代码分析](https://cloud.tencent.com/product/tcap)  | 内部代号CodeDog  |  | 云原生、分布式、高性能的代码综合分析平台，保障项目敏捷迭代下的代码质量   | 腾讯云代码分析（内部代号CodeDog）是集众多代码分析工具的云原生、分布式、高性能的代码综合分析跟踪管理平台，其主要功能是持续跟踪分析代码，观测项目代码质量，支撑团队传承代码文化。  |
 |  [Cloud Studio（云端 IDE）](https://cloud.tencent.com/product/cloudstudio)  | 云端 IDE  |  | 云端 IDE (Cloud Studio) 是基于浏览器的集成式开发工具，为开发者提供了一个稳定的云端工作站。用户在使用 Cloud Studio 时无需安装，随时随地打开浏览器即可使用。   | Cloud Studio（云端 IDE）是基于浏览器的集成式开发环境，为开发者提供了一个稳定的云端工作站。用户在使用 Cloud Studio 时无需安装，随时随地打开浏览器即可使用。  |
 |  [腾讯云小程序平台](https://cloud.tencent.com/product/tcmpp)  | undefined  | undefined | 一站式开发，将小程序投放到企业自有APP   | undefined  |
 |  [腾讯云遨驰终端new](https://cloud.tencent.com/product/orcaterm)  | undefined  | undefined | 腾讯遨驰云原生操作系统中CVM、Lighthouse、裸金属等产品的统一网页终端   | undefined  |
-### 云资源管理(12)
+### 云资源管理(13)
 |  产品   |  英文名  | 英文简称 | 概述  | 详情 |
 |  ----  | ----  | ----  | ----  |  ----  |
 |  [资源编排 TIC](https://cloud.tencent.com/product/tic)  | undefined  | undefined | 为您的所有基础架构资源提供易用、高效、安全的统一管理平台   | 资源编排 TIC 为您提供易用、高效、安全的基础架构管理平台。平台使用声明型语言，兼容众多优秀的开源社区工具，同时提供代码编辑和视图编辑两种模式，有效降低学习成本和使用难度。TIC 使用代码版本管理的方式管理基础架构，保障基础设施的构建、管理和迁移的可靠性和安全性。  |
@@ -531,6 +530,7 @@
 |  [配置审计](https://cloud.tencent.com/product/config)  | Config  |  | 腾讯云资源配置变更记录及合规审计服务，帮助您集中管控云资源配置情况   | 配置审计（Config）帮助您集中审计和治理云资源。它可持续记录和评估分散在您账号下各地域、各类云资源的配置信息和变更操作，从而帮助您高效实现资源自主监管和规范运维。  |
 |  [集团账号管理](https://cloud.tencent.com/product/organization)  | undefined  | undefined | 支持您集中管理多个腾讯云账号和层级组织的服务   | 集团账号管理为企业客户提供云上多账号管理能力，您可以便捷的完成多个账号的的统一授权管理、财务管理、资源共享管理以及操作审计等，通过这些功能，能够更好地满足企业的预算、安全性和合规性需求。  |
 |  [商业流程服务](https://cloud.tencent.com/product/bpaas)  | BPaaS  |  | 标准、规范、电子化的云资源流程管理，满足您账号资源的审批需求   | 商业流程服务（BPaaS）是一项云资源的审批流程服务，可以帮助您管理账号下的资源申请与分配。您无需创建多个腾讯云账号来管理不同业务的资源，而是在一个腾讯云账号下管理和分配资源。管理员创建不同的资源审批流，申请人可根据业务需求发起流程，待流程审批通过后即可进行资源的分配。  |
+|  [控制中心new](https://cloud.tencent.com/product/control-center)  | Control Center  |  | 控制中心   | 控制中心（Control Center）为企业客户提供腾讯云多账号环境集中管理的能力。通过自动设置Landing Zone，帮助企业管理员根据最佳实践，从多账号的权限、财务、安全、合规等领域构建安全合规的云环境。  |
 ### 应用程序集成(1)
 |  产品   |  英文名  | 英文简称 | 概述  | 详情 |
 |  ----  | ----  | ----  | ----  |  ----  |

@@ -41,7 +41,7 @@ function generateHandledProductJson(productList, config) {
 }
 
 function generateProductMd(productList, config) {
-  const { fileName, title, isThridCategory } = config;
+  const { fileName, title, isThirdCategory } = config;
 
   const stream = fs.createWriteStream(
     `output/${fileName.split('_')[0]}/${fileName}.md`,
@@ -72,12 +72,12 @@ function generateProductMd(productList, config) {
         `## ${trim(product.firstCategory)}(${product.firstCategoryCount})`
       );
 
-      if (!isThridCategory || !product.secondCategory) {
+      if (!isThirdCategory || !product.secondCategory) {
         setTableHeader(writeLine);
       }
     }
 
-    if (isThridCategory) {
+    if (isThirdCategory) {
       if (product.needSecondCategory) {
         if (product.secondCategory) {
           writeLine(

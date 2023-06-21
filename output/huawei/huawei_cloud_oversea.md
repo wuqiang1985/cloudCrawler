@@ -1,7 +1,7 @@
 
 # 华为云国际站产品列表
 
-`本文档生成于：2023/6/16 @qiangwu`
+`本文档生成于：2023/6/21 @qiangwu`
 
 `华为云国际站一共包含18个大类，122款产品，详情如下`
 
@@ -94,7 +94,7 @@
 |  [数据湖探索 DLI](https://www.huaweicloud.com/intl/zh-cn/product/dli.html)  | Data Lake Insight  | 简称DLI | 流处理、批处理的融合处理分析服务   | 数据湖探索（Data Lake Insight，简称DLI）是完全兼容Apache Spark、Apache Flink、openLooKeng（基于Presto）生态，提供一站式的流处理、批处理、交互式分析的Serverless融合处理分析服务，支持数据入湖、数据仓库、BI、AI融合等能力。  |
 |  [数据仓库服务 DWS](https://www.huaweicloud.com/intl/zh-cn/product/dws.html)  | undefined  | undefined | 极致性能、稳定、按需扩展   | 新一代、全场景数据仓库，一站式分析，性能、容量无限扩展守护高价值数据、创享高价值分析，企业数字化转型坚实伙伴  |
 |  [实时流计算服务 CS](https://www.huaweicloud.com/intl/zh-cn/product/cs.html)  | undefined  | undefined | 实时大数据分析平台   |   |
-|  [MapReduce服务 MRS](https://www.huaweicloud.com/intl/zh-cn/product/mrs.html)  | MapReduce Service  |  | 企业级大数据集群云服务   | 云原生数据湖MRS（MapReduce Service）为客户提供Hudi、ClickHouse、Spark、Flink、Kafka、HBase等Hadoop生态的高性能大数据组件，支持数据湖、数据仓库、BI、AI融合等能力。MRS同时支持混合云和公有云两种形态：混合云版本，一个架构实现离线、实时、逻辑三种数据湖，以云原生架构助力客户智能升级；公有云版本，协助客户快速构建低成本、灵活开放、安全可靠的一站式大数据平台。  |
+|  [MapReduce服务 MRS](https://www.huaweicloud.com/intl/zh-cn/product/mrs.html)  | undefined  | undefined | 企业级大数据集群云服务   |   |
 |  [云搜索服务 CSS](https://www.huaweicloud.com/intl/zh-cn/product/css.html)  | undefined  | undefined | 提供多条件检索与分析能力   | 云搜索服务是一个基于Elasticsearch且完全托管的在线分布式搜索服务，为用户提供结构化、非结构化文本、以及基于AI向量的多条件检索、统计、报表。完全兼容开源Elasticsearch软件原生接口；它可以帮助网站和APP搭建搜索框，提升用户的搜索体验；也可以用于搭建日志分析平台，助力企业实现数据驱动运维，数据驱动运营；它的向量检索能力可以帮助客户快速构建基于AI的图搜、推荐、语义搜索、人脸识别等丰富的应用。  |
 |  [数据可视化 DLV](https://www.huaweicloud.com/intl/zh-cn/product/dlv.html)  | undefined  | undefined | 提供可视化组件定制和应用数据大屏   |   |
 |  [数据治理中心 DataArts Studio](https://www.huaweicloud.com/intl/zh-cn/product/dayu.html)  | undefined  | undefined | 一站式数据开发与治理平台   | 数据治理中心(DataArts Studio)是数据全生命周期一站式开发运营平台，提供数据集成、数据开发、数据治理、数据服务等功能，支持行业知识库智能化建设，支持大数据存储、大数据计算分析引擎等数据底座，帮助企业客户快速构建数据运营能力。  |

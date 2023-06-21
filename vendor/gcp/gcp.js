@@ -1,5 +1,3 @@
-const { crawProductListPage } = require('../../crawler');
-
 const config = {
   productListUrl: 'https://cloud.google.com/products?hl=zh-cn',
   productSelector: '.cws-headline',
@@ -7,7 +5,7 @@ const config = {
   title: '谷歌云',
   maxConnections: 20,
   excludeCategory: ['精选产品'],
-  isThridCategory: false,
+  isThirdCategory: false,
   getProductListInfo: function ($, el) {
     const productElem = $(el);
     const descElem = productElem.next();
@@ -40,4 +38,4 @@ const config = {
   },
 };
 
-crawProductListPage(config);
+module.exports = config;

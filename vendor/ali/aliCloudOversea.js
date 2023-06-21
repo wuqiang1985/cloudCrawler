@@ -1,5 +1,3 @@
-const { crawProductListPage } = require('../../crawler');
-
 const config = {
   productListUrl: 'https://www.alibabacloud.com/zh/product',
   productSelector: '.product-tit',
@@ -7,7 +5,7 @@ const config = {
   title: '阿里云国际站',
   rateLimit: 800,
   // maxConnections: 20,
-  isThridCategory: true,
+  isThirdCategory: true,
   getProductListInfo: function ($, el) {
     const productElem = $(el);
     const descElem = productElem.next();
@@ -61,4 +59,4 @@ const config = {
   },
 };
 
-crawProductListPage(config);
+module.exports = config;

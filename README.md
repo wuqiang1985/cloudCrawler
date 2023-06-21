@@ -71,7 +71,7 @@ const config = {
   // 排除分类
   excludeCategory: ["精选推荐"],
   // 是否为三级标题模式
-  isThridCategory: true,
+  isThirdCategory: true,
   // 产品列表页爬取，有 SSR 和 CSR 两种模式
   // SSR 参数为 function ($, el) $ 类似 jQuery 中的$, el 为 productSelector 遍历的当前产品元素
   // CSR 参数为 function (page) page 是 playwright 中的对象
